@@ -10,19 +10,15 @@ export default class TodoListItem extends Component {
     };
 
     onLabelClick = () => {
-        this.setState(({done}) => {
-            return {
-                done: !done
-            }
-        });
+        this.setState({
+            done: true
+        })
     };
     onMarkImportant = () => {
-        this.setState(({important}) => {
-            return {
-                important: !important
-            }
-        });
-    };
+        this.setState({
+            important: true
+        })
+    }
 
     render () {
         const { label } = this.props;
@@ -47,7 +43,7 @@ export default class TodoListItem extends Component {
 
                 <button type="button"
                         className="btn btn-success btn-sm float-right"
-                            onClick={this.onMarkImportant}>
+                        onClick={this.onMarkImportant}>
                     <i className="fa fa-exclamation"/>
                 </button>
 
