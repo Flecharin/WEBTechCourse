@@ -20,7 +20,7 @@ export default class App extends Component {
         ]
     };
 
-    deleteitem = (id) => {
+    deleteItem = (id) => {
         this.setState(({todoData}) => {
             const idx = todoData.findIndex((element) => element.id === id);
                 const newArray = [
@@ -60,7 +60,7 @@ export default class App extends Component {
                 </div>
 
                 <TodoList todos={this.state.todoData}
-                          onDeleted={this.deleteitem} />
+                          onDeleted={this.deleteItem} />
                 <ItemAddForm onItemAdd={this.addItem} x/>
             </div>
         );
