@@ -1,3 +1,8 @@
-.item-add-form {
+.item-add-form input
+.item-add-form  {
     margin-bottom: 10px;
+}
+
+.item-add-form input {
+    margin-bottom: 5px;
 }
